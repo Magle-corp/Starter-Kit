@@ -1,5 +1,5 @@
 {
-  "name": "@magle-corp/starter-kit",
+  "name": "@magle-corp/starter",
   "version": "0.0.1",
   "bin": {
     "starter-kit": ".bin/init_project.js"
