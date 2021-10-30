@@ -1,13 +1,15 @@
 {
   "name": "@magle-corp/starter-kit",
-  "version": "1.1.8",
-  "bin": ".bin/init_project.js",
+  "version": "0.0.1",
+  "bin": {
+    "starter-kit": ".bin/init_project.js"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Magle-corp/Starter-Kit.git"
   },
-  "author": "",
+  "author": "Magle-corp",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Magle-corp/Starter-Kit/issues"
@@ -15,5 +17,8 @@
   "homepage": "https://github.com/Magle-corp/Starter-Kit#readme",
   "main": "index.js",
   "keywords": [],
-  "description": ""
+  "description": "Starter-Kit par Magle-corp.",
+  "directories": {
+    "doc": "doc"
+  }
 }
