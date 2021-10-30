@@ -1,0 +1,6 @@
+[submodule "Starter-Next"]
+	path = Starter-Next
+	url = git@github.com:Magle-corp/Starter-Next.git
+[submodule "Starter-Strapi"]
+	path = Starter-Strapi
+	url = git@github.com:Magle-corp/Starter-Strapi.git
