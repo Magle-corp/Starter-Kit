@@ -13,7 +13,7 @@ const project_name = process.argv[2];
 // Execute shell commands.
 const runCommand = (command) => {
   try {
-    execSync(`${command}`, { stdio: "pipe" });
+    execSync(`${command}`, { stdio: "inherit" });
   } catch (err) {
     console.error(`Failed to execute ${command}`, err);
     return false;
@@ -86,7 +86,7 @@ files_to_update.forEach((file) => {
 
 // Replace "Starter-Kit" in Next Git actions.
 const set_next_git_actions = runCommand(
-  `sed -i "s/Starter-Kit-next/${project_name}-strapi/g" ${project_name}/${project_name}-next/.github/workflows/deploy.yml`
+  `sed -i "s/Starter-Kit-next/${project_name}-next/g" ${project_name}/${project_name}-next/.github/workflows/deploy.yml`
 );
 if (!set_next_git_actions) {
   process.exit(-1);
