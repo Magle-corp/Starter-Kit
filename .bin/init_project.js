@@ -84,6 +84,14 @@ files_to_update.forEach((file) => {
   }
 });
 
+// Replace "Starter-Kit" in Next Git actions.
+const set_next_git_actions = runCommand(
+  `sed -i "s/Starter-Kit-next/${project_name}-strapi/g" ${project_name}/${project_name}-next/.github/workflows/deploy.yml`
+);
+if (!set_next_git_actions) {
+  process.exit(-1);
+}
+
 // Replace "Starter-Kit" in Strapi Git actions.
 const set_strapi_git_actions = runCommand(
   `sed -i "s/Starter-Kit-strapi/${project_name}-strapi/g" ${project_name}/${project_name}-strapi/.github/workflows/deploy.yml`
