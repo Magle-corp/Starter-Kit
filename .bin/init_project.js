@@ -86,10 +86,11 @@ files_to_update.forEach((file) => {
 
 // Replace "Starter-Kit" in Strapi Git actions.
 const set_strapi_git_actions = runCommand(
-    `sed -i "s/Starter-Kit-strapi/${project_name}-strapi/g" ${project_name}/${project_name}-strapi/.github/workflows/deploy.yml`
+  `sed -i "s/Starter-Kit-strapi/${project_name}-strapi/g" ${project_name}/${project_name}-strapi/.github/workflows/deploy.yml`
 );
 if (!set_strapi_git_actions) {
   process.exit(-1);
+}
 
 // Remove unnecessary files for development project.
 console.log(`[5/6] Remove unnecessary files`);
