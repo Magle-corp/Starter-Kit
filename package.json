@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/Magle-corp/Starter-Kit/issues"
   },
-  "homepage": "https://github.com/Magle-corp/Starter-Kit#readme",
+  "homepage": "https://github.com/Magle-corp/Starter-Kit/doc/README_NPM.md",
   "main": "index.js",
   "keywords": [],
   "description": "Starter-Kit par Magle-corp.",

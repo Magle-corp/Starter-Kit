@@ -3,9 +3,9 @@
 Créer une instance du Starter Kit pour son dévelopement.
 
 Cette instance comprendra les projets :
-- [Starter Kit](https://github.com/Magle-corp/Starter-Kit) 
-- [Starter Next](https://github.com/Magle-corp/Starter-Next)
-- [Starter Strapi](https://github.com/Magle-corp/Starter-Strapi)
+- [Starter Kit](https://github.com/Magle-corp/Starter-Kit) 🏗
+- [Starter Next](https://github.com/Magle-corp/Starter-Next) 🚀
+- [Starter Strapi](https://github.com/Magle-corp/Starter-Strapi) 🎩
 
 Chaque projet est versionné individuellement, les parties Next et Strapi sont des sous-modules git.
 
@@ -26,10 +26,6 @@ git clone git@github.com:Magle-corp/Starter-Kit.git
 cd Starter-Kit
 git submodule init
 git submodule update
-```
-
-Lancer Docker.
-```shell
 cp .env.example
 docker-compose up
 ```

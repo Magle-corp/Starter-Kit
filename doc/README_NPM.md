@@ -4,13 +4,9 @@ Starter-Kit par Magle-corp.
 
 🔤 TypeScript  🚀 Next.js  🎩 Strapi.js  🏗 MySQL  📋 PhpMyAdmin  🐋 Docker 🧪 Jest
 
-Intègre le design system [Starter-UI](https://github.com/Magle-corp/Starter-UI) 🎉 [consulter le book](http://storybook.magle-staging.ovh)
-
 ___
 
 ## A propos
-
-Projet construit à l'aide du [Starter Kit](https://github.com/Magle-corp/starter-kit)
 
 Intègre le design system [Starter-UI](https://github.com/Magle-corp/Starter-UI) 🎉 [consulter le book](http://storybook-staging.magle.fr)
 
@@ -22,13 +18,11 @@ Assurez-vous que les ports suivants sont disponibles :
 - 3306
 - 8081
 
-## Installer le projet
+## Installation
 
-```shell
-git clone git@github.com:Magle-corp/Starter-Kit.git
-cd Starter-Kit
-git submodule init
-git submodule update
+```bash
+npx @magle-corp/starter <nom_du_projet>
+cd <nom_du_projet>
 cp .env.example
 docker-compose up
 ```
