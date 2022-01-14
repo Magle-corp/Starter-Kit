@@ -39,8 +39,11 @@ services:
 
   frontend:
     build: ./${APP_NAME_FRONT}
+    user: ${UID_GID}
     volumes:
       - ./${APP_NAME_FRONT}:/app
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
     ports:
       - "3000:3000"
     environment:
