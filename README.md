@@ -16,12 +16,6 @@ Assurez-vous que les ports suivants sont disponibles :
 - 3306
 - 8081
 
-D'après le site web de Docker, votre utilisateur doit être dans le groupe Docker.
-
-```shell
-sudo usermod -aG docker your-user
-```
-
 ## Installation
 
 Pour installer le projet en mode developement voir [documentation dev](/doc/README_DEV.md).
