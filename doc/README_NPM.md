@@ -8,6 +8,8 @@ ___
 
 ## A propos
 
+[NPM package](https://www.npmjs.com/package/@magle-corp/starter)
+
 Intègre le design system [Starter-UI](https://github.com/Magle-corp/Starter-UI) 🎉 [consulter le book](http://storybook-staging.magle.fr)
 
 ## Requis
