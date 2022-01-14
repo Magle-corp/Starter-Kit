@@ -30,12 +30,12 @@ git submodule update
 
 Lancer Docker.
 ```shell
-cp .env.example # renseigner les variables d'environements
+cp .env.example
 docker-compose up
 ```
 
 ## Enjoy
+
 - Next app disponible [http://localhost:3000](http://localhost:3000)
 - Strapi app disponible [http://localhost:1337](http://localhost:1337)
 - PhpMyAdmin disponible [http://localhost:8081](http://localhost:8081)
-

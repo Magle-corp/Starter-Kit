@@ -27,7 +27,7 @@ git submodule update
 
 Lancer Docker.
 ```shell
-cp .env.example # renseigner les variables d'environements
+cp .env.example
 docker-compose up
 ```
 
