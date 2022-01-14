@@ -22,14 +22,14 @@ const runCommand = (command) => {
 };
 
 // Clone Starter-Kit repository.
-console.log(`[1/6] Cloning Starter-Kit repository as ${project_name}`);
+console.log(`[1/5] Cloning Starter-Kit repository as ${project_name}`);
 const clone_starter_kit = `git clone git@github.com:Magle-corp/Starter-Kit.git ${project_name}`;
 const result_clone_starter_kit = runCommand(clone_starter_kit);
 if (!result_clone_starter_kit) process.exit(-1);
 
 // Clone Starter-Next repository.
 console.log(
-  `[2/6] Cloning Starter-Next repository as ${project_name}/${project_name}-next`
+  `[2/5] Cloning Starter-Next repository as ${project_name}/${project_name}-next`
 );
 const clone_starter_next = `git clone git@github.com:Magle-corp/Starter-Next.git ${project_name}/${project_name}-next`;
 const result_clone_starter_next = runCommand(clone_starter_next);
@@ -37,7 +37,7 @@ if (!result_clone_starter_next) process.exit(-1);
 
 // Clone Starter-Strapi repository.
 console.log(
-  `[3/6] Cloning Starter-Strapi repository as ${project_name}/${project_name}-strapi`
+  `[3/5] Cloning Starter-Strapi repository as ${project_name}/${project_name}-strapi`
 );
 const clone_starter_strapi = `git clone git@github.com:Magle-corp/Starter-Strapi.git ${project_name}/${project_name}-strapi`;
 const result_clone_starter_strapi = runCommand(clone_starter_strapi);
@@ -68,7 +68,7 @@ if (!result_mv) {
 }
 
 // Replace "Starter-Kit" by project_name in listed files.
-console.log(`[4/6] Set the project name "${project_name}"`);
+console.log(`[4/5] Set the project name "${project_name}"`);
 const files_to_update = [
   ".env.example",
   "README.md",
@@ -85,7 +85,7 @@ files_to_update.forEach((file) => {
 });
 
 // Remove unnecessary files for development project.
-console.log(`[5/6] Remove unnecessary files`);
+console.log(`[5/5] Remove unnecessary files`);
 const files_to_remove = [
   "doc",
   "package.json",
