@@ -84,28 +84,12 @@ files_to_update.forEach((file) => {
   }
 });
 
-// Replace "Starter-Kit" in Next Git actions.
-const set_next_git_actions = runCommand(
-  `sed -i "s/Starter-Kit-next/${project_name}-next/g" ${project_name}/${project_name}-next/.github/workflows/deploy.yml`
-);
-if (!set_next_git_actions) {
-  process.exit(-1);
-}
-
-// Replace "Starter-Kit" in Strapi Git actions.
-const set_strapi_git_actions = runCommand(
-  `sed -i "s/Starter-Kit-strapi/${project_name}-strapi/g" ${project_name}/${project_name}-strapi/.github/workflows/deploy.yml`
-);
-if (!set_strapi_git_actions) {
-  process.exit(-1);
-}
-
 // Remove unnecessary files for development project.
 console.log(`[5/6] Remove unnecessary files`);
 const files_to_remove = [
+  "doc",
   "package.json",
   ".git",
-  "doc",
   `${project_name}-next/.git`,
   `${project_name}-strapi/.git`,
   "Starter-Next",
@@ -118,13 +102,6 @@ files_to_remove.forEach((file) => {
   }
 });
 
-// Initialize git repository.
-console.log(`[6/6] Initialize git and create first commit`);
-const initialize_git = `cd ${project_name} && git init && git add . && git commit -m "${project_name} initial commit"`;
-const result_initialize_git = runCommand(initialize_git);
-if (!result_initialize_git) process.exit(-1);
-
-console.log(`[!] You should push to a remote repository`);
 console.log(`[!] Create an environment file 'cp .env.example .env'`);
 console.log(
   `[i] Start developing ${project_name} project with 'docker-compose up'`
