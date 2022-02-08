@@ -17,8 +17,5 @@
   "homepage": "https://github.com/Magle-corp/Starter-Kit/doc/README_NPM.md",
   "main": "index.js",
   "keywords": [],
-  "description": "Starter-Kit par Magle-corp.",
-  "directories": {
-    "doc": "doc"
-  }
+  "description": "Starter-Kit par Magle-corp."
 }
