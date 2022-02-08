@@ -6,17 +6,13 @@ Starter-Kit par Magle-corp.
 
 ___
 
-## A propos
-
-Intègre le design system [Starter-UI](https://github.com/Magle-corp/Starter-UI) 🎉 [consulter le book](http://storybook-staging.magle.fr)
-
 ## Requis
 
 Assurez-vous que les ports suivants sont disponibles :
-- 3000
-- 1337
-- 3306
-- 8081
+- 3000 Next.js
+- 1337 Strapi
+- 3306 MySQL
+- 8081 PhpMyAdmin
 
 ## Installation
 
