@@ -23,7 +23,7 @@ Assurez-vous que les ports suivants sont disponibles :
 ```bash
 npx @magle-corp/starter <nom_du_projet>
 cd <nom_du_projet>
-cp .env.example
+cp .env.example .env
 docker-compose up
 ```
 
