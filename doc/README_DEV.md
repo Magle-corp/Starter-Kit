@@ -26,7 +26,7 @@ git clone git@github.com:Magle-corp/Starter-Kit.git
 cd Starter-Kit
 git submodule init
 git submodule update
-cp .env.example
+cp .env.example .env
 docker-compose up
 ```
 
